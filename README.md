@@ -10,6 +10,7 @@ ideas de pantallas
 https://dribbble.com/shots/18941129-Online-Cinema-Platform
 
 Logo
-https://logomaster.ai/es/app/proposals
+https://logomaster.ai/es/share/6eBGykY8
+
 
 
