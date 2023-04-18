@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../styles/register.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
+	<title>Registro</title>
+</head>
+
+<body>
+
+	<form action="register.html" method="get">
+
+		<h1><em>Your Movie</em></h1>
+		<picture>
+			<img src="/assets/logoIndividual.svg" alt="Logotipo Your Movie">
+		</picture>
+		<h2>Regístrate</h2>
+
+		<div class="formNombre">
+			<label for="nombre">Nombre Completo</label>
+			<input type="text" name="nombre" id="nombre" placeholder="Luisa Morales" onblur=validacionNombreApellido()
+				required>
+			<span></span>
+		</div>
+
+		<div>
+			<label for="correo">Correo electrónico</label>
+			<input type="email" name="correo" placeholder="luisamorales@gmail.com" required>
+			<span></span>
+		</div>
+
+		<div>
+
+			<label for="contrasena">Contraseña</label>
+			<input type="password" name="contrasena" onblur=validaContrasena() required>
+			<!-- <p>Debe contener, al menos, 8 caracteres, una letra mayúscula, una letra minúscula, un número y un
+					caracter especial.</p> -->
+		</div>
+
+		<div>
+
+			<label for="confirmarContrasena">Confirmar contraseña</label>
+			<input type="password" name="confirmarContrasena" required>
+			<span></span>
+		</div>
+
+		<div>
+
+			<label for="fechaNacimiento">Selecciona tu fecha de nacimiento</label>
+			<input type="date" id="fechaNacimiento" required>
+
+		</div>
+
+		<label id="terminosCondiciones">
+			<input type="checkbox" value="acepta" id="inputCkeckbox" required><br>
+			Acepto los Términos y Condiciones
+		</label>
+
+		<div class="botonIngresoRegistro">
+			<input type="submit" id="linkDireccion" value="Registrarse"></input>
+		</div>
+
+
+	</form>
+
+	<div class="imgForm">
+
+		<div id="divBackgroundImg"></div>
+		<h2>¿Ya tienes una cuenta?</h2>
+		<p>Ingresa y descubre el catálogo de películas que tenemos para ti</p>
+		
+		<div class="botonIngresoRegistro">
+			<a href="../pantallas/login.html" id="linkIngreso">Ingresa aquí</a>
+	
+		</div>
+	</div>
+
+	
+
+
+</body>
+
+</html>
