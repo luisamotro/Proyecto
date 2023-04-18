@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../styles/login.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
+	<title>Registro</title>
+</head>
+
+<body>
+
+	<form action="register.html" method="get">
+
+		<h1><em>Your Movie</em></h1>
+		<picture>
+			<img src="/assets/logoIndividual.svg" alt="Logotipo Your Movie">
+		</picture>
+		<h2>Ingresa</h2>
+
+		<div class="formNombre">
+			<label for="nombre">Nombre o correo electrónico</label>
+			<input type="text" name="nombre" id="nombreIngreso" onblur=validacionNombreApellido()
+				required>
+			<span></span>
+		</div>
+
+		<div>
+
+			<label for="contrasena">Contraseña</label>
+			<input type="password" name="contrasena" onblur=validaContrasena() required>
+		</div>
+
+		
+		<div class="botonIngresoRegistro">
+			<input type="submit" id="linkDireccionIngreso" value="Registrarse"></input>
+		</div>
+
+
+	</form>
+
+	<div class="imgForm">
+
+		<div id="divBackgroundImgIngreso"></div>
+		<h2>¿Aún no tienes una cuenta?</h2>
+		<p>Regístrate y descubre el catálogo de películas que tenemos para ti</p>
+		
+		<div class="botonIngresoRegistro">
+			<a href="../pantallas/register.html" id="linkRegistro">Ingresa aquí</a>
+	
+		</div>
+	</div>
+
+	
+
+
+</body>
+
+</html>

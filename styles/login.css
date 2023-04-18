@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Jost", sans-serif;
+}
+
+/* Estructura principal form superior registro */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3vw;
+  border-color: #598392;
+  margin: 10vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  width: 90%;
+  padding: 4vw;
+}
+
+/* Imagenes y titulos form superior registro */
+
+picture {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 20vw;
+}
+
+h1,
+h2 {
+  font-size: 5.5vw;
+  text-align: center;
+  margin-block: 0.5vw;
+  font-weight: 600;
+}
+
+/* Inputs form superior registro */
+
+label{
+  font-size: 4vw;
+}
+
+input {
+  font-size: 3.5vw;
+  width: 100%;
+  border-radius: 2vw;
+  border-style: solid;
+}
+
+/* Boton submit */
+
+.botonIngresoRegistro {
+  display: flex;
+  justify-content: center;
+}
+
+#linkDireccionIngreso {
+  cursor: pointer;
+  border: none;
+  font-size: 3.5vw;
+  width: 50%;
+  background-color: #124559;
+  color: white;
+  transition: 0.5s;
+}
+
+#linkDireccionIngreso:hover {
+  padding: 1vw;
+  font-size: 3.75vw;
+  font-weight: 600;
+}
+
+/* Form inferior de ingreso */
+
+#linkRegistro {
+  font-size: 3.5vw;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 2vw;
+  border-style: solid;
+  border: none;
+  text-align: center;
+  width: 50%;
+  background-color: #124559;
+  color: white;
+  transition: 0.5s;
+}
+
+#linkRegistro:hover {
+  padding: 1vw;
+  font-size: 3.75vw;
+  font-weight: 600;
+}
+
+/* Form inferior de ingreso imagen */
+
+#divBackgroundImg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.imgForm {
+  border-top-style: solid;
+  border-top-width: 1px;
+  gap: 2vw;
+  padding: 4vw;
+  border-color: black;
+  background-image: url(../assets/joker.jpg);
+
+  border-end-end-radius: 3vw;
+  border-bottom-left-radius: 3vw;
+  
+  background-size: 150%;
+  background-position: 10% 100%;
+}
+
+.imgForm h2,
+.imgForm p {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  -webkit-text-stroke: 0.1px black;
+}
+
+.imgForm h2{
+  font-size: 6vw;
+}
+
+.imgForm p{
+  font-size: 4vw;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1200px){
+  
+  body {
+    margin: 15vw;
+  }
+    
+  /* Imagenes y titulos form superior registro */
+  
+  img {
+    width: 15vw;
+  }
+  
+  h1,
+  h2 {
+    font-size: 4.5vw;
+    font-weight: 500;
+  }
+  
+  /* Inputs form superior registro */
+  
+  label{
+    font-size: 2.5vw;
+  }
+  
+  input {
+    font-size: 2vw;
+  }
+   
+  /* Boton submit */
+  
+  #linkDireccionIngreso {
+    font-size: 2vw;
+  }
+  
+  #linkDireccionIngreso:hover {
+    padding: 1vw;
+    font-size: 2.25vw;
+  }
+  
+  /* Form inferior de ingreso */
+  
+  #linkRegistro {
+    font-size: 2vw;
+  }
+  
+  #linkRegistro:hover {
+    padding: 1vw;
+    font-size: 2.25vw;
+  }
+  
+  /* Form inferior de ingreso imagen */
+  
+  .imgForm {
+    background-size: 125%;
+  }
+  
+  .imgForm h2,
+  .imgForm p {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    -webkit-text-stroke: 0.1px black;
+  }
+  
+  .imgForm h2{
+    font-size: 4vw;
+  }
+  
+  .imgForm p{
+    font-size: 2.5vw;
+  }
+}
+
+@media (min-width: 1201px) {
+  
+  body {
+    margin-block: 10vw;
+    margin-inline: 25vw;
+  }
+  
+  form{
+   gap:0.75vw ;
+   padding-block:1vw
+  }
+  
+  /* Imagenes y titulos form superior registro */
+  
+
+  img {
+    width: 10vw;
+  }
+  
+  h1 {
+    font-size: 3.5vw;
+    font-weight: 500;
+  }
+
+  h2{
+    font-size: 2.8vw;
+  }
+  
+  /* Inputs form superior registro */
+  
+  label{
+    font-size: 1.5vw;
+  }
+  
+  input {
+    font-size: 1vw;
+    width: 90%;
+  }
+  
+  /* Boton submit */
+  
+  #linkDireccionIngreso {
+    font-size: 1.25vw;
+  }
+  
+  #linkDireccionIngreso:hover {
+    padding: 0.5vw;
+    font-size: 1.5vw;
+  }
+  
+  /* Form inferior de ingreso */
+  
+  #linkRegistro {
+    font-size: 1.25vw;
+  }
+  
+  #linkRegistro:hover {
+    padding: 0.5vw;
+    font-size: 1.5vw;
+  }
+  
+  /* Form inferior de ingreso imagen */
+    
+  .imgForm h2{
+    font-size: 3vw;
+  }
+  
+  .imgForm p{
+    font-size: 2vw;
+  }
+}
